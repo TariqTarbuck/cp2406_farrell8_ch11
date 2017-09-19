@@ -3,19 +3,23 @@ public abstract class DebugBoat
    String boatType = new String();
    int passengers;
    String power = new String();
+   public String toString;
+
    public DebugBoat(String bt)
    {
       boatType = bt;
    }
+
+   public DebugBoat() {
+
+   }
+
    // override equals() method to satisfy
    // requirements of Debug Exercise 3.
    public boolean equals(DebugBoat otherBoat)
    {
       boolean result;
-      if((passengers == otherBoat.passengers) && (power.equals(otherBoat.power)))
-         result = true;
-      else
-         result = false;
+      result = (passengers == otherBoat.passengers) && (power.equals(otherBoat.power));
       return result;
    }
    public String toString()

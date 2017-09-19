@@ -17,12 +17,12 @@ public class DebugEleven4
      {
         boatType = getBoat();
         if(boatType =='r')
- 	     boatArray[x] = DebugRowboat();
+ 	     boatArray[x] = new DebugRowboat();
         else
-          boatArray[x] = DebugOceanLiner();
+          boatArray[x] = new DebugOceanLiner();
      }
    }
-   public static void getBoat()
+   public static char getBoat()
    {
       String boatType;
       boatType = JOptionPane.showInputDialog(null, 
